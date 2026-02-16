@@ -1,0 +1,36 @@
+# WordPress
+wp-config.php
+.htaccess
+
+# Uploads (opcional: comentar si quieres subir imágenes)
+wp-content/uploads/
+
+# Cache y temporales
+wp-content/cache/
+wp-content/backup-db/
+wp-content/upgrade/
+wp-content/temp/
+
+# Logs
+*.log
+error_log
+debug.log
+
+# Sistema
+.DS_Store
+Thumbs.db
+._*
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Node modules (si usas temas/plugins con npm)
+node_modules/
+package-lock.json
+
+# Composer (si usas)
+vendor/

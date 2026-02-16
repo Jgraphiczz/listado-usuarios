@@ -1,0 +1,102 @@
+/* Estilos para Listado de Usuarios */
+
+/* Formulario de búsqueda */
+.formulario-busqueda {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.formulario-busqueda h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #23282d;
+}
+
+.campos-busqueda {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #23282d;
+}
+
+.campo input {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.campo input:focus {
+    border-color: #2271b1;
+    outline: none;
+    box-shadow: 0 0 0 1px #2271b1;
+}
+
+.botones {
+    display: flex;
+    gap: 10px;
+}
+
+/* Loading */
+#cargando {
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+/* Tabla de resultados */
+#contenedor-resultados {
+    margin-top: 20px;
+}
+
+.sin-resultados {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Paginación */
+.paginacion {
+    margin-top: 20px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.paginacion .button {
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 782px) {
+    .campos-busqueda {
+        grid-template-columns: 1fr;
+    }
+    
+    .botones {
+        flex-direction: column;
+    }
+    
+    .botones .button {
+        width: 100%;
+    }
+}
